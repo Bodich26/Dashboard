@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:regular,500,600" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Dashboard</title>
+</head>
+<body>
+  <div class="wrapper">
+    <aside class="sidebar">
+      <div class="sidebar__top">
+        <a class="logo" href="#"><img src="images/logo.webp" alt="Logo">v.01</a>
+      </div>
+      <div class="sidebar__center">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <div class="menu__list-box">
+                <a class="menu__list-link" href="#">
+                  <img class="menu__list-img" src="images/key.svg" alt="Key">
+                  Dashboard
+                  <img class="menu__list-arrow" src="images/arrow.svg" alt="Arrow">
+                </a>
+              </div>
+            </li>
+            <li class="menu__list-item">
+              <div class="menu__list-box">
+                <a class="menu__list-link" href="#">
+                  <img class="menu__list-img" src="images/3d.svg" alt="3D Cube">
+                  Product
+                  <img class="menu__list-arrow" src="images/arrow.svg" alt="Arrow">
+                </a>
+              </div>
+            </li>
+            <li class="menu__list-item js-active">
+              <div class="menu__list-box">
+                <a class="menu__list-link" href="#">
+                  <img class="menu__list-img" src="images/user.svg" alt="User">
+                  Customers
+                  <img class="menu__list-arrow" src="images/arrow.svg" alt="Arrow">
+                </a>
+              </div>
+            </li>
+            <li class="menu__list-item">
+              <div class="menu__list-box">
+                <a class="menu__list-link" href="#">
+                  <img class="menu__list-img" src="images/wallet.svg" alt="Wallet">
+                  Income
+                  <img class="menu__list-arrow" src="images/arrow.svg" alt="Arrow">
+                </a>
+              </div>
+            </li>
+            <li class="menu__list-item">
+              <div class="menu__list-box">
+                <a class="menu__list-link" href="#">
+                  <img class="menu__list-img" src="images/discount.svg" alt="Discount">
+                  Promote
+                  <img class="menu__list-arrow" src="images/arrow.svg" alt="Arrow">
+                </a>
+              </div>
+            </li>
+            <li class="menu__list-item">
+              <div class="menu__list-box">
+                <a class="menu__list-link" href="#">
+                  <img class="menu__list-img" src="images/help.svg" alt="Help">
+                  Help
+                  <img class="menu__list-arrow" src="images/arrow.svg" alt="Arrow">
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="sidebar__bottom">
+        <div class="profile">
+          <a class="profile__img" href="#"><img src="images/profile.webp" alt="Profile"></a>
+          <div class="profile__box">
+            <b class="profile__box-name">Evano</b>
+            <span class="profile__box-position">Project Manager</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <main class="main">
+      <section class="customers">
+        <h1 class="customers__greetings">Hello Evano 👋🏼,</h1>
+        <div class="customers__wrap">
+          <div class="customers__top">
+            <div class="customers__top-box">
+              <h1 class="customers__top-title">All Customers</h1>
+              <a class="customers__top-members" href="#">Active Members</a>
+            </div>
+            <div class="customers__top-search">
+              <img class="customers__top-img" src="images/search.svg" alt="Search">
+              <input class="customers__top-input" type="text" placeholder="Search">
+            </div>
+          </div>
+          <div class="customers__center">
+            <div class="customers__responsive">
+              <table class="customers__table">
+                <thead class="customers__table-thead">
+                  <tr class="customers__table-columns">
+                    <th class="customers__table-title">Customer Name</th>
+                    <th class="customers__table-title">Company</th>
+                    <th class="customers__table-title">Phone Number</th>
+                    <th class="customers__table-title">Email</th>
+                    <th class="customers__table-title">Country</th>
+                    <th class="customers__table-title">Status</th>
+                  </tr>
+                </thead>
+                <tbody class="customers__table-tbody">
+                  <tr class="customers__table-columns">
+                    <td class="customers__table-text">Jane Cooper</td>
+                    <td class="customers__table-text">Microsoft</td>
+                    <td class="customers__table-text">(225) 555-0118</td>
+                    <td class="customers__table-text">jane@microsoft.com</td>
+                    <td class="customers__table-text">United States</td>
+                    <td class="customers__table-active">Active</td>
+                  </tr>
+                  <tr class="customers__table-columns">
+                    <td class="customers__table-text">Floyd Miles</td>
+                    <td class="customers__table-text">Yahoo</td>
+                    <td class="customers__table-text">(205) 555-0100</td>
+                    <td class="customers__table-text">floyd@yahoo.com</td>
+                    <td class="customers__table-text">Kiribati</td>
+                    <td class="customers__table-inactive">Inactive</td>
+                  </tr>
+                  <tr class="customers__table-columns">
+                    <td class="customers__table-text">Ronald Richards</td>
+                    <td class="customers__table-text">Adobe</td>
+                    <td class="customers__table-text">(302) 555-0107</td>
+                    <td class="customers__table-text">ronald@adobe.com</td>
+                    <td class="customers__table-text">Israel</td>
+                    <td class="customers__table-inactive">Inactive</td>
+                  </tr>
+                  <tr class="customers__table-columns">
+                    <td class="customers__table-text">Marvin McKinney</td>
+                    <td class="customers__table-text">Tesla</td>
+                    <td class="customers__table-text">(252) 555-0126</td>
+                    <td class="customers__table-text">marvin@tesla.com</td>
+                    <td class="customers__table-text">Iran</td>
+                    <td class="customers__table-active">Active</td>
+                  </tr>
+                  <tr class="customers__table-columns">
+                    <td class="customers__table-text">Jerome Bell</td>
+                    <td class="customers__table-text">Google</td>
+                    <td class="customers__table-text">(629) 555-0129</td>
+                    <td class="customers__table-text">jerome@google.com</td>
+                    <td class="customers__table-text">Réunion</td>
+                    <td class="customers__table-active">Active</td>
+                  </tr>
+                  <tr class="customers__table-columns">
+                    <td class="customers__table-text">Kathryn Murphy</td>
+                    <td class="customers__table-text">Microsoft</td>
+                    <td class="customers__table-text">(406) 555-0120</td>
+                    <td class="customers__table-text">kathryn@microsoft.com</td>
+                    <td class="customers__table-text">Curaçao</td>
+                    <td class="customers__table-active">Active</td>
+                  </tr>
+                  <tr class="customers__table-columns">
+                    <td class="customers__table-text">Jacob Jones</td>
+                    <td class="customers__table-text">Yahoo</td>
+                    <td class="customers__table-text">(208) 555-0112</td>
+                    <td class="customers__table-text">jacob@yahoo.com</td>
+                    <td class="customers__table-text">Brazil</td>
+                    <td class="customers__table-active">Active</td>
+                  </tr>
+                  <tr class="customers__table-columns">
+                    <td class="customers__table-text">Kristin Watson</td>
+                    <td class="customers__table-text">Facebook</td>
+                    <td class="customers__table-text">(704) 555-0127</td>
+                    <td class="customers__table-text">kristin@facebook.com</td>
+                    <td class="customers__table-text">Åland Islands</td>
+                    <td class="customers__table-inactive">Inactive</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="customers__bottom">
+            <p class="customers__bottom-text">Showing data 1 to 8 of 256K entries</p>
+            <div class="customers__bottom-box">
+              <button class="customers__bottom-btn" id="prevBtn"><img src="images/arrow_pagination-prev.svg" alt="ArrowPrev"></button>
+              <a class="customers__bottom-link js-active-btn" href="#">1</a>
+              <a class="customers__bottom-link" href="#">2</a>
+              <a class="customers__bottom-link" href="#">3</a>
+              <a class="customers__bottom-link" href="#">4</a>
+              <span class="customers__bottom-point">...</span>
+              <a class="customers__bottom-link" href="#">40</a>
+              <button class="customers__bottom-btn" id="nextBtn"><img src="images/arrow_pagination-next.svg" alt="ArrowNext"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>

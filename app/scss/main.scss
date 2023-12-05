@@ -1,0 +1,10 @@
+.main {
+  flex-grow: 1;
+  padding: 41px 95px 258px 71px;
+}
+
+@media (max-width: 1444px) {
+  .main {
+    padding: 41px 15px 258px 71px;
+  }
+}

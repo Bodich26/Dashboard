@@ -1,0 +1,130 @@
+.wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  width: 308px;
+  @include shadow();
+  max-width: 306px;
+  padding: 36px 28px 76px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  &__top {
+    flex: 0 0 auto;
+    margin-bottom: 53px;
+  }
+  &__center {
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+  &__bottom {
+    margin-top: 20px;
+    flex: 0 0 auto;
+  }
+}
+.menu {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+    &-item {
+      border-radius: 8px;
+      background-color: transparent;
+      transition: cubic-bezier(0.22, 0.21, 0.94, 0.53) 0.2s;
+      &:hover {
+        background-color: var(--purple);
+      }
+    }
+    &-link {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 21px;
+      letter-spacing: -0.01em;
+      color: var(--main);
+      display: flex;
+      padding: 11px 8px 11px 11px;
+      transition: cubic-bezier(0.22, 0.21, 0.94, 0.53) 0.2s;
+      &:hover {
+        color: var(--white);
+      }
+    }
+    &-box {
+    }
+    &-img {
+      width: 24px;
+      margin-right: 14px;
+    }
+    &-arrow {
+      width: 16px;
+      height: 16px;
+      margin-left: auto !important;
+    }
+  }
+}
+.menu__list-item:hover .menu__list-img,
+.menu__list-item:hover .menu__list-arrow {
+  color: var(--white);
+  filter: brightness(2);
+}
+.menu__list-item.js-active .menu__list-link {
+  color: var(--white);
+}
+.menu__list-item.js-active .menu__list-img {
+  filter: brightness(2);
+}
+
+.menu__list-item.js-active .menu__list-arrow {
+  filter: brightness(2);
+}
+.js-active {
+  color: var(--white);
+  background-color: var(--purple);
+}
+.logo {
+  display: flex;
+  align-items: end;
+  column-gap: 4px;
+  color: #838383;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: -0.01em;
+  img {
+    width: 195px;
+  }
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  &__img {
+    width: 42px;
+    height: 42px;
+    img {
+      border-radius: 50%;
+    }
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    &-name {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 21px;
+      letter-spacing: 0.01em;
+      color: var(--black);
+    }
+    &-position {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0.01em;
+      color: #757575;
+    }
+  }
+}
